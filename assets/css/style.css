@@ -69,6 +69,18 @@ body {
 }
 
 h2 {
-    font-weight: 200;
-    font-size: 26px;
+    font-weight: 400 !important;
+    font-size: 34px;
+    font-style: italic;
+    margin: 30px 0 30px 0 !important;
+}
+
+.car-detail {
+    padding: 2px;
+    border: 1px solid #e7e7e7;
+    margin: 2px;
+}
+
+.juntos {
+    margin-top: 50px !important;
 }
