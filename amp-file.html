@@ -1,0 +1,496 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="./index.html">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Open-source framework for publishing content",
+            "datePublished": "2015-10-07T12:02:41Z",
+            "image": [
+                "logo.jpg"
+            ]
+        }
+    </script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
+
+
+    <style amp-custom>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            align-content: center;
+        }
+        
+        .row {
+            text-align: left;
+            display: flex;
+        }
+        
+        .top {
+            width: 100%;
+            height: 40px;
+            background: #EEEEEE 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+        
+        .top amp-img {
+            width: 32%;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        
+        .top .link-group {
+            display: inline;
+        }
+        
+        .top .link-group img {
+            height: 17px;
+        }
+        
+        .link-group a {
+            color: #707070;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        
+        .logo {
+            margin: 28px;
+        }
+        
+        .form-card {
+            height: 352px;
+            width: 80%;
+            background: #EEEEEE 0% 0% no-repeat padding-box;
+            box-shadow: 0px 0px 5px #00000029;
+            border-radius: 4px;
+            opacity: 1;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            margin: 40px 20px 20px 20px;
+        }
+        
+        .call-image {
+            width: 16%;
+            display: inline-grid;
+        }
+        
+        .form-field {
+            margin: 2.5px;
+            width: 85%;
+            height: 36px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #777777;
+            border-radius: 4px;
+            opacity: 0.5;
+            color: #00000061;
+            text-align: left;
+            letter-spacing: 0px;
+            padding-left: 30px;
+        }
+        
+        .header {
+            display: grid;
+            text-align: center;
+        }
+        
+        .form-btn {
+            margin: 2.5px;
+            width: 95%;
+            background: #1CB72A 0% 0% no-repeat padding-box;
+            border-radius: 4px;
+            color: #fff;
+            border: none;
+            height: 45px;
+        }
+        
+        h2 {
+            font-weight: 400;
+            font-size: 28px;
+            font-style: italic;
+            margin: 30px 10px 30px 10px;
+            text-transform: uppercase;
+        }
+        
+        h4 {
+            font-weight: 600;
+            font-size: 18px;
+            font-style: italic;
+            margin: 10px 0 10px 0;
+        }
+        
+        .car-detail {
+            padding: 30px;
+            border: 1px solid #e7e7e7;
+            margin: 30px 50px 30px 50px;
+        }
+        
+        .juntos {
+            margin-top: 50px;
+        }
+        
+        .juntos amp-img {
+            width: 90%;
+            margin: 30px;
+        }
+        
+        .design-description {
+            margin: 30px;
+            font-weight: 500;
+        }
+        
+        .interior {
+            background-image: url('./assets/img/Retângulo 11.png');
+            width: 100%;
+            height: 415px;
+            background-size: cover;
+        }
+        
+        .with-subtitles {
+            margin: 0;
+        }
+        
+        .box-text {
+            font-size: 14px;
+            margin: 10px 60px 10px 60px;
+        }
+        
+        .banner-text {
+            position: relative;
+            top: 240px;
+            color: white;
+        }
+        
+        .banner-text p {
+            font-size: 16px;
+            text-align: center;
+            padding-right: 30px;
+            padding-left: 30px;
+            margin: 10px;
+        }
+        
+        .card {
+            border-radius: 0;
+            padding: 10px;
+            margin: 10px;
+            align-items: center;
+            display: flex;
+        }
+        
+        .card-header {
+            background: none;
+            border: none;
+            width: 50%;
+        }
+        
+        .card-text {
+            font-size: 12px;
+            text-align: left;
+            width: 50%;
+        }
+        
+        .card-button {
+            background: none;
+            border: 1px solid #D5D5D5;
+            border-radius: 4px;
+            text-transform: uppercase;
+            width: 90%;
+            height: 36px;
+            font-size: 14px;
+            display: block;
+            align-self: center;
+            margin: 10px 30px;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            width: 100%;
+            height: 340px;
+            background: #EEEEEE 0% 0% no-repeat padding-box;
+            opacity: 1;
+            display: in;
+        }
+        
+        .btn-footer {
+            width: 270px;
+            height: 80px;
+            background-color: white;
+            border: 1px solid #DF0209;
+            border-radius: 5px;
+            margin: 19px;
+            margin-bottom: 0;
+        }
+        
+        .btn-footer span {
+            display: grid;
+            margin: 0;
+        }
+        
+        .after-footer {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: inline-flex;
+            font-size: 10px;
+        }
+        
+        .dvm-circle {
+            margin: 5px;
+            background-color: #e5e5e5;
+            color: white;
+            padding: 5px;
+            height: 40px;
+            width: 40px;
+            border-radius: 35px;
+        }
+        
+        .logo-footer {
+            display: grid;
+        }
+        
+        .form-title {
+            width: 70%;
+            display: inline-grid;
+        }
+    </style>
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+        
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+        
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+</head>
+
+<body>
+    <div class="top">
+        <amp-img src="./assets/img/home-button.svg" alt="Welcome" height="25"></amp-img>
+        <amp-img src="./assets/img/facebook-placeholder-for-locate-places-on-maps.svg" alt="Welcome" height="25"></amp-img>
+        <amp-img src="./assets/img/black-envelope.svg" alt="Welcome" height="18"></amp-img>
+    </div>
+
+    <div class="logo">
+        <amp-img src="./assets/img/logo.png" alt="Welcome" height="51.3" width="200"></amp-img>
+    </div>
+
+    <div class="header">
+        <span style=" color: #727B7A; line-height: 0.5; font: italic normal normal 15px 'Segoe UI';">CENTRAL DE ATENDIMENTO</span>
+        <span style=" color: #DF0209; line-height: 0.5; font: italic normal normal 25px 'Segoe UI';">(31) 3123-1234</span>
+    </div>
+
+    <amp-img src="./assets/img/Civic_EXL_2017_3_4_Lado_A_Preto_72dpi.png" alt="Welcome" layout="responsive" height="235.5" width="400"></amp-img>
+    <amp-img src="./assets/img/Grupo 98.svg" alt="Welcome" height="23.6" width="318"></amp-img>
+
+    <div class="form-card">
+        <div class="row">
+            <div class="call-image">
+                <amp-img src="./assets/img/Grupo 45.svg" alt="" height="35" width="40"></amp-img>
+            </div>
+            <div class="form-title" style="display: inline-grid; margin-bottom: 20px;">
+                <span style=" font: 14px 'Segoe UI'; line-height: 0.6;">Solicitar um</span>
+                <span style="color: #DF0209; font: 22px 'Segoe UI';">CONTATO</span>
+            </div>
+        </div>
+        <form method="POST" class="" action-xhr="#">
+
+            <input type="text" class="form-field" style=" background: url('./assets/img/Grupo\ 32.svg') no-repeat padding-box 7px 7px;" placeholder=" Nome">
+
+            <input type="text" class="form-field" style=" background: url('./assets/img/black-envelope-1.svg') no-repeat padding-box 7px 7px;" placeholder="E-mail">
+
+            <input type="text" class="form-field" style=" background: url('./assets/img/call-answer.svg') no-repeat padding-box 7px 7px;" placeholder="Telefone">
+
+            <input type="text" class="form-field" style=" background: url('./assets/img/clock-circular-outline.svg') no-repeat padding-box 7px 7px;" placeholder="Escolha o horário">
+
+            <input type="text" class="form-field" style=" background: url('./assets/img/facebook-placeholder-for-locate-places-on-maps-2.svg') no-repeat padding-box 7px 7px;" placeholder="Escolha a unidade">
+
+
+            <input type="submit" class="form-btn" value="AGENDAR TESTE DRIVE"></input>
+        </form>
+    </div>
+    <h2>A Emoção de dirigir leva você mais longe</h2>
+    <div class="juntos">
+        <amp-img src="./assets/img/juntosi.png" alt="Welcome" layout="responsive" height="200" width="638"></amp-img>
+    </div>
+    <div class="design-description">
+        <p>O novo Civic Geração 10 traz um design único mudando a categoria de sedãs para sempre. Ele garante a melhor dirigibilidade com o máximo em sofisticação e conforto, atribuído por seu design interno e diferenciada ergonomia.</p>
+    </div>
+    <div class="interior">
+        <div class="banner-text">
+            <h2 class="with-subtitles">Prepare-se para algo realmente novo</h2>
+            <p>O Novo Civic Geração 10 vem completo de série. Conheça a versão perfeita para você.</p>
+        </div>
+    </div>
+    <amp-carousel width="400" height="430" layout="responsive" type="slides" autoplay delay="2000" role="region" aria-label="Carousel with autoplay">
+        <div class="detail-box">
+            <amp-img class="car-detail margin" src="./assets/img/07-DIRECAO_ELETRICA.png" alt="" layout="responsive" width="322" height="223"></amp-img>
+            <div class="box-title">
+                <h4>Direção com Assistência</h4>
+            </div>
+            <div class="box-text">
+                <p>
+                    Sistema de estabilidade que reforça automaticamente o retorno da direção, auxiliando o motorista em situações onde o carro está ameaçado de instabilidade.
+                </p>
+            </div>
+        </div>
+
+        <div class="detail-box">
+            <amp-img class="car-detail margin" src="./assets/img/08-VIDROS_ELETRICOS.png" alt="" layout="responsive" width="322" height="223"></amp-img>
+            <div class="box-title">
+                <h4>Vidros elétricos com subida</h4>
+            </div>
+            <div class="box-text">
+                <p>
+                    Todas as portas possuem vidros elétricos com a função "um toque" e sistema de segurança antiesmagamento.
+                </p>
+            </div>
+        </div>
+
+        <div class="detail-box">
+            <amp-img class="car-detail margin" src="./assets/img/01-CAMBIO_AUTOMATICO.png" alt="" layout="responsive" width="322" height="223"></amp-img>
+            <div class="box-title">
+                <h4>Câmbio CVT com Paddle Shift</h4>
+            </div>
+            <div class="box-text">
+                <p>
+                    O câmbio com transmissão CVT de 7 velocidade com Paddle Shift (aletas) proporciona conforto ao trocar de marchas.
+                </p>
+            </div>
+        </div>
+
+    </amp-carousel>
+    <h2>Pronto para ter um Honda?</h2>
+    <div class="design-description">
+        <p>Conheça os últimos grandes lançamentos da Honda.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <amp-img src="./assets/img/accord.png" alt="" layout="responsive" height="179" width="211"></amp-img>
+        </div>
+        <div class="card-text">
+            <p>
+                Novo Honda Accord: a combinação perfeita de três atributos exigidos pelo consumidor: elegância, luxo e alto desempenho.
+            </p>
+        </div>
+    </div>
+
+    <button class="card-button">Conheça Mais</button>
+    <div class="card">
+        <div class="card-header">
+            <amp-img src="./assets/img/city.png" alt="" layout="responsive" height="179" width="211"></amp-img>
+        </div>
+        <div class="card-text">
+            <p>
+                O City está muito mais moderno e esportivo. Com design único e mais tecnológico do que nunca, ele vai conquistar todos os olhares.
+            </p>
+        </div>
+    </div>
+    <button class="card-button">Conheça Mais</button>
+
+    <div class="card">
+        <div class="card-header">
+            <amp-img src="./assets/img/fit_2018.png" alt="" layout="responsive" height="179" width="211"></amp-img>
+        </div>
+        <div class="card-text">
+            <p>
+                Com seu design inconfundível, o novo Honda Fit traz novidades que vão surpreender a todos e atrair ainda mais fãs.
+            </p>
+        </div>
+    </div>
+    <button class="card-button">Conheça Mais</button>
+
+    <div class="footer">
+        <button class="btn-footer">
+                <amp-img src="./assets/img/facebook-placeholder-for-locate-places-on-maps.svg" width="20" height="20" class="call-image" alt=""></amp-img>
+            
+                            <div class="form-title">
+                                <span class="card-text" style="font: 'Segoe UI';text-align: left;">Encontre uma</span>
+                                <span style=" color: #DF0209;font: 20px 'Segoe UI';text-align: left;">CONCESSIONÁRIA</span>
+                            </div>
+            </button>
+
+        <button class="btn-footer">
+            <span style=" line-height: 0.5; font: italic normal normal 15px 'Segoe UI';">CENTRAL DE ATENDIMENTO</span>
+            <span style=" color: #DF0209; line-height: 0.5; font: italic normal normal 25px 'Segoe UI';">(31) 3123-1234</span>
+        </button>
+        <span style=" margin: 15px; line-height: 0.5; font: italic normal normal 20px 'Segoe UI'; display: block;">SIGA A BANZAI NAS REDES SOCIAIS</span>
+        <button class="dvm-circle">
+            <amp-img src="./assets/img/59439.png" alt="" width="20" height="20"></amp-img>
+        </button>
+        <button class="dvm-circle">
+            <amp-img src="./assets/img/1562139.svg" alt="" width="20" height="20"></amp-img>
+        </button>
+        <button class="dvm-circle">
+            <amp-img src="./assets/img/twitter-1767918-1502171.png" alt="" width="20" height="20"></amp-img>
+        </button>
+    </div>
+    <div class="after-footer">
+        <div class="logo-footer"></div>
+        <amp-img src="./assets/img/logo.png" alt="" width="110" height="28"></amp-img>
+    </div>
+    <div class="card-text" style="display: inline-block; margin-bottom:20px;">
+        <span>Todos juntos fazem um trânsito melhor.</span>
+    </div>
+    <div class="call-image">
+        <amp-img src="./assets/img/logo_ibama.png" alt="" width="33" height="42"></amp-img>
+    </div>
+    </div>
+</body>
+
+</html>
